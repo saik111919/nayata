@@ -1,13 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router";
+import router from "./router";
+import ErrorBoundary from "./ErrorBoundary";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/nayata/">
-      <App />
-    </BrowserRouter>
-  </StrictMode>,
-)
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
+  </StrictMode>
+);
