@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nayata</title>
+    <style>
+      /* Hide body content to prevent any visual flash */
+      body {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+    </style>
+    <script type="text/javascript">
+      // Enhanced Single Page Apps for GitHub Pages
+      // Improved version with instant redirect and no visual flickering
+      (function() {
+        'use strict';
+        
+        // Configuration for GitHub Pages project site
+        var pathSegmentsToKeep = 1;
+        var l = window.location;
+        
+        // Build the redirect URL immediately
+        var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        
+        // Immediate redirect without any delay
+        l.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- This content is hidden and should never be visible due to immediate redirect -->
+    <div style="display: none;">Redirecting...</div>
+    <!-- Padding to ensure file is > 512 bytes for IE compatibility -->
+    <!-- This is required for Internet Explorer to properly handle the 404 page -->
+    <!-- The content below ensures the file meets the minimum size requirement -->
+    <!-- while remaining completely invisible to users due to the immediate redirect -->
+    <!-- and hidden body styling applied above in the CSS section of this document -->
+  </body>
+</html>

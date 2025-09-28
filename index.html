@@ -1,13 +1,111 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nayata</title>
+    <link rel="icon" type="image/png" href="/nayata.png" />
+
+    <!-- General (Chrome, Android, Edge) -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Nayata" />
+
+    <!-- Enhanced viewport meta for optimal full-screen display -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+
+    <!-- Enhanced meta tags for better SEO and accessibility -->
+    <meta
+      name="description"
+      content="Nayata - Advanced Financial Dashboard for tracking expenses, managing budgets, and gaining financial insights with real-time analytics."
+    />
+    <meta
+      name="keywords"
+      content="finance, expense tracker, budget management, financial dashboard, money management"
+    />
+    <meta name="author" content="Nayata" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Enhanced mobile and PWA meta tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nayata" />
+    <meta name="application-name" content="Nayata" />
+    <meta name="theme-color" content="#623 0.214 259.815" />
+    <meta name="msapplication-TileColor" content="#623 0.214 259.815" />
+
+    <!-- Enhanced accessibility meta tags -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <!-- Enhanced title -->
+    <title>Nayata - Financial Dashboard</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Enhanced favicon and app icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Enhanced noscript fallback for better accessibility -->
+    <noscript>
+      <div
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #f8f9fa;
+          color: #212529;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            sans-serif;
+          z-index: 9999;
+        "
+      >
+        <div>
+          <h1 style="margin-bottom: 1rem; color: #dc3545">
+            JavaScript Required
+          </h1>
+          <p style="margin-bottom: 1rem; font-size: 1.1rem">
+            This application requires JavaScript to function properly. Please
+            enable JavaScript in your browser settings.
+          </p>
+          <p style="color: #6c757d; font-size: 0.9rem">
+            If you continue to see this message, please check your browser's
+            JavaScript settings or try a different browser.
+          </p>
+        </div>
+      </div>
+    </noscript>
   </body>
 </html>
