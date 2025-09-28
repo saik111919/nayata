@@ -1,44 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/nayata/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nayata</title>
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      })(window.location);
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
-    <script type="module" crossorigin src="/nayata/assets/index-BBRu_9l7.js"></script>
-    <link rel="stylesheet" crossorigin href="/nayata/assets/index-D1CB8EhX.css">
-  </head>
+    <link rel="icon" type="image/png" href="/nayata/nayata.png" />
+
+    <!-- General (Chrome, Android, Edge) -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Nayata" />
+
+    <!-- Enhanced viewport meta for optimal full-screen display -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+
+    <!-- Enhanced meta tags for better SEO and accessibility -->
+    <meta
+      name="description"
+      content="Nayata - Advanced Financial Dashboard for tracking expenses, managing budgets, and gaining financial insights with real-time analytics."
+    />
+    <meta
+      name="keywords"
+      content="finance, expense tracker, budget management, financial dashboard, money management"
+    />
+    <meta name="author" content="Nayata" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Enhanced mobile and PWA meta tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nayata" />
+    <meta name="application-name" content="Nayata" />
+    <meta name="theme-color" content="#623 0.214 259.815" />
+    <meta name="msapplication-TileColor" content="#623 0.214 259.815" />
+
+    <!-- Enhanced accessibility meta tags -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <!-- Enhanced title -->
+    <title>Nayata - Financial Dashboard</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Enhanced favicon and app icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <script type="module" crossorigin src="/nayata/assets/index-iJIm-8Ne.js"></script>
+    <link rel="stylesheet" crossorigin href="/nayata/assets/index-DVA4--a0.css">
+  <link rel="manifest" href="/nayata/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/nayata/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
+
+    <!-- Enhanced noscript fallback for better accessibility -->
+    <noscript>
+      <div
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #f8f9fa;
+          color: #212529;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            sans-serif;
+          z-index: 9999;
+        "
+      >
+        <div>
+          <h1 style="margin-bottom: 1rem; color: #dc3545">
+            JavaScript Required
+          </h1>
+          <p style="margin-bottom: 1rem; font-size: 1.1rem">
+            This application requires JavaScript to function properly. Please
+            enable JavaScript in your browser settings.
+          </p>
+          <p style="color: #6c757d; font-size: 0.9rem">
+            If you continue to see this message, please check your browser's
+            JavaScript settings or try a different browser.
+          </p>
+        </div>
+      </div>
+    </noscript>
   </body>
 </html>
